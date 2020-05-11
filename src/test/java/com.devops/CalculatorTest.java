@@ -22,4 +22,13 @@ public class CalculatorTest {
         int result = calculator.add(a, b);
         Assert.assertEquals(expectedResult, result);
     }
+
+    @Test
+    public void testSubtract() {
+        int a = 25;
+        int b = 20;
+        int expectedResult = 5;
+        long result = calculator.subtract(a, b);
+        Assert.assertEquals(expectedResult, result);;
+    }
 }
